@@ -1,6 +1,6 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 
 const LinkContainer = () => {
   const isSmallScreen = useMediaQuery('(max-width:600px)');
@@ -9,15 +9,15 @@ const LinkContainer = () => {
       <Container fluid className='bg-secondary' style={{ minHeight: '100vh'}}>
         <Row className={`${isSmallScreen ? 'pt-2' : 'pt-4'} justify-content-center`}>
             <Col className='d-flex align-items-center justify-content-center'>
-                <Button variant='contained' className='bg-success' size='lg'>
-                    <Row>
-                      <h3>Skills</h3>
-    
-                    </Row>
-                    <Row>
-
-                    </Row>
-                </Button>
+                <Card className='bg-dark text-light'>
+                    <Card.Body>
+                      <Card.Title className='d-flex justify-content-center'>Skills</Card.Title>
+                      <Card.Text className='d-flex align- p-1'>
+                        Javascript, React, Python, SQL, Node.js,<br /> 
+                        Next.js, HTML, CSS and more.
+                      </Card.Text>
+                    </Card.Body>
+                </Card>
             </Col>
             <Col className='d-flex align-items-center justify-content-center'>
                 <Button variant='contained' className='bg-success' size='lg'>
