@@ -8,7 +8,7 @@ const LinkContainer = () => {
     <>
       <Container fluid className='bg-secondary' style={{ minHeight: '100vh'}}>
         <Row className={`${isSmallScreen ? 'pt-2' : 'pt-4'} justify-content-center`}>
-            <Col className='d-flex align-items-center justify-content-center'>
+            <Col sm='auto' className='d-flex align-items-center justify-content-center pb-1'>
                 <Card className='bg-dark text-light'>
                     <Card.Body>
                       <Card.Title className='d-flex justify-content-center'>Skills</Card.Title>
@@ -19,15 +19,38 @@ const LinkContainer = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col className='d-flex align-items-center justify-content-center'>
-                <Button variant='contained' className='bg-success' size='lg'>
-                    <h3>About</h3>
-                </Button>
+            <Col sm='auto' className='d-flex align-items-center justify-content-center pb-1'>
+                <Card className='bg-dark text-light'>
+                    <Card.Body>
+                      <Card.Title className='d-flex justify-content-center'>Projects</Card.Title>
+                      <Card.Text className='d-flex align- p-1'>
+                        Javascript, React, Python, SQL, Node.js,<br /> 
+                        Next.js, HTML, CSS and more.
+                      </Card.Text>
+                    </Card.Body>
+                </Card>
             </Col>
-            <Col className='d-flex align-items-center justify-content-center'>
-                <Button variant='contained' className='bg-success' size='lg'>
-                    <h3>Contact</h3>
-                </Button>
+            <Col sm='auto' className='d-flex align-items-center justify-content-center pb-1'>
+                <Card className='bg-dark text-light'>
+                    <Card.Body>
+                      <Card.Title className='d-flex justify-content-center'>About</Card.Title>
+                      <Card.Text className='d-flex align- p-1'>
+                        Javascript, React, Python, SQL, Node.js,<br /> 
+                        Next.js, HTML, CSS and more.
+                      </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+            <Col sm='auto' className='d-flex align-items-center justify-content-center pb-1'>
+                <Card className='bg-dark text-light'>
+                    <Card.Body>
+                      <Card.Title className='d-flex justify-content-center'>Contact</Card.Title>
+                      <Card.Text className='d-flex align- p-1'>
+                        Javascript, React, Python, SQL, Node.js,<br /> 
+                        Next.js, HTML, CSS and more.
+                      </Card.Text>
+                    </Card.Body>
+                </Card>
             </Col>
         </Row>
       </Container>
