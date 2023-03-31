@@ -31,7 +31,7 @@ const LinkContainer = () => {
                 <Card.Title className='d-flex justify-content-center'>
                   Skills
                 </Card.Title>
-                <Card.Text className='d-flex p-1'>
+                <Card.Text className='d-flex p-1 pt-3'>
                   Javascript, React, Python, SQL, Node.js, Next.js, HTML, CSS
                   and more.
                 </Card.Text>
@@ -50,10 +50,16 @@ const LinkContainer = () => {
                 <Card.Title className='d-flex justify-content-center'>
                   Projects
                 </Card.Title>
-                <Card.Text className='d-flex p-1'>
-                  Javascript, React, Python, SQL, Node.js, Next.js, HTML, CSS
-                  and more.
-                </Card.Text>
+                <Card.Body className='d-flex p-1'>
+                  <Button variant='outline-light'>
+                    <Link
+                      href='/projects'
+                      style={{ textDecoration: 'none', color: 'white' }}
+                    >
+                      View Projects
+                    </Link>
+                  </Button>
+                </Card.Body>
               </Card.Body>
             </Card>
           </Col>
@@ -69,7 +75,7 @@ const LinkContainer = () => {
                 <Card.Title className='d-flex justify-content-center'>
                   About
                 </Card.Title>
-                <Card.Text className='d-flex p-1'>
+                <Card.Text className='d-flex p-1 pt-3'>
                   Developer with a background in the medical device industry and
                   a graduate of the Coding Boot Camp at the University of Utah.
                   Passionate about creating applications that benefit people’s
