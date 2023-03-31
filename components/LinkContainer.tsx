@@ -2,7 +2,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Link from 'next/link';
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-//import GitHubIcon from '@mui/icons-material/Github';
+import GitHubIcon from '@mui/icons-material/Github';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -102,7 +102,7 @@ const LinkContainer = () => {
                     href='https://github.com/thomasdylan'
                     style={{ textDecoration: 'none', color: 'white' }}
                   >
-                    Github
+                    <GitHubIcon fontSize='large' /> Github
                   </Link>
                   <br />
                   <Link
