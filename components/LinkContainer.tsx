@@ -2,10 +2,12 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Link from 'next/link';
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import GitHubIcon from '@mui/icons-material/Github';
+//import GitHubIcon from '@mui/icons-material/Github';  Vercel is unable to build project with this icon
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
+import Image from 'next/image';
 
 const LinkContainer = () => {
   const isSmallScreen = useMediaQuery('(max-width:600px)');
@@ -102,7 +104,18 @@ const LinkContainer = () => {
                     href='https://github.com/thomasdylan'
                     style={{ textDecoration: 'none', color: 'white' }}
                   >
-                    <GitHubIcon fontSize='large' /> Github
+                    {
+                      //Githubicon goes here when I find one that doesn't break vercel deployment
+                    }
+                    <Image
+                      src='/github.svg'
+                      alt='Github'
+                      width={28}
+                      height={28}
+                      className='m-1'
+                    />
+                    {'  '}
+                    Github
                   </Link>
                   <br />
                   <Link
