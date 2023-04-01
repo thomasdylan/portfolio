@@ -104,9 +104,6 @@ const LinkContainer = () => {
                     href='https://github.com/thomasdylan'
                     style={{ textDecoration: 'none', color: 'white' }}
                   >
-                    {
-                      //Githubicon goes here when I find one that doesn't break vercel deployment
-                    }
                     <Image
                       src='/github.svg'
                       alt='Github'
