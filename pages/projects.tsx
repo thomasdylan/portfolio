@@ -24,7 +24,7 @@ const projects = () => {
             isSmallScreen ? 'pt-2' : 'pt-4'
           } justify-content-center bg-secondary`}
         >
-          <Col className='d-flex justify-content-center'>
+          <Col className='d-flex justify-content-center pb-1' sm='auto'>
             <Card
               className='bg-dark text-light pb-2'
               style={{ width: cardSize, height: cardSize + '50px' }}
@@ -55,7 +55,7 @@ const projects = () => {
               </div>
             </Card>
           </Col>
-          <Col className='d-flex justify-content-center'>
+          <Col className='d-flex justify-content-center pb-1' sm='auto'>
             <Card
               className='bg-dark text-light pb-2'
               style={{ width: cardSize, height: cardSize + '50px' }}
@@ -94,7 +94,7 @@ const projects = () => {
               </div>
             </Card>
           </Col>
-          <Col className='d-flex justify-content-center'>
+          <Col className='d-flex justify-content-center pb-1' sm='auto'>
             <Card
               className='bg-dark text-light pb-2'
               style={{ width: cardSize, height: cardSize + '50px' }}
