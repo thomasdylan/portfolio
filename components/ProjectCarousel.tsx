@@ -26,27 +26,27 @@ const ProjectCarousel = () => {
       <Carousel.Item>
         <Image
           className='d-block w-100'
-          src='/Python-Symbol.png'
-          alt='Second slide'
+          src='/ClientPanel.png'
+          alt='Client Panel'
           width={200}
           height={150}
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3>Client Panel</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
           className='d-block w-100'
-          src='/Python-Symbol.png'
-          alt='Third slide'
+          src='/ClickyGame.png'
+          alt='Clicky Game'
           width={200}
           height={150}
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Clicky Game</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

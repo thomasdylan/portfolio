@@ -26,12 +26,12 @@ const projects = () => {
         >
           <Col className='d-flex justify-content-center'>
             <Card
-              className='bg-dark text-light'
+              className='bg-dark text-light pb-2'
               style={{ width: cardSize, height: cardSize + '50px' }}
             >
               <Card.Img
                 variant='top'
-                src='https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png'
+                src='/Python-Symbol.png'
                 className='pt-1'
               />
               <Card.Title className='d-flex justify-content-center'>
@@ -41,106 +41,96 @@ const projects = () => {
                 100 python projects in 100 days.
               </Card.Body>
               <div className='d-flex justify-content-center mt-3'>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
+                <Link
+                  href='https://github.com/thomasdylan/100DaysOfPython'
+                  style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Code
-                </Button>
+                  <Button
+                    variant='secondary'
+                    className='d-flex justify-content-center'
+                  >
+                    Code
+                  </Button>
+                </Link>
               </div>
             </Card>
           </Col>
           <Col className='d-flex justify-content-center'>
             <Card
-              className='bg-dark text-light'
+              className='bg-dark text-light pb-2'
               style={{ width: cardSize, height: cardSize + '50px' }}
             >
-              <Card.Img
-                variant='top'
-                src='https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-              />
+              <Card.Img variant='top' src='/ClientPanel.png' />
               <Card.Title className='d-flex justify-content-center'>
-                Placeholder
+                Client Panel
               </Card.Title>
-              <Card.Body>lorem ipsum</Card.Body>
+              <Card.Body>
+                A panel to manage clients information and account balances.
+                Built with Angular and Typescript.
+              </Card.Body>
               <div className='d-flex justify-content-around'>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
+                <Link
+                  href='https://client-panel-6e5ab.web.app/'
+                  style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Site
-                </Button>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
+                  <Button
+                    variant='secondary'
+                    className='d-flex justify-content-center'
+                  >
+                    Site
+                  </Button>
+                </Link>
+                <Link
+                  href='https://github.com/thomasdylan/clientpanel'
+                  style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Code
-                </Button>
+                  <Button
+                    variant='secondary'
+                    className='d-flex justify-content-center'
+                  >
+                    Code
+                  </Button>
+                </Link>
               </div>
             </Card>
           </Col>
           <Col className='d-flex justify-content-center'>
             <Card
-              className='bg-dark text-light'
+              className='bg-dark text-light pb-2'
               style={{ width: cardSize, height: cardSize + '50px' }}
             >
-              <Card.Img
-                variant='top'
-                src='https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-              />
+              <Card.Img variant='top' src='/ClickyGame.png' />
               <Card.Title className='d-flex justify-content-center'>
-                Placeholder
+                Clicky Game
               </Card.Title>
-              <Card.Body>lorem ipsum</Card.Body>
+              <Card.Body>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                Built with React. Click the pictures to get points, but don't
+                click the same picture twice.
+              </Card.Body>
               <div className='d-flex justify-content-around'>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
+                <Link
+                  href='https://thomasdylan.github.io/Clicky-Game/'
+                  style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Site
-                </Button>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
+                  <Button
+                    variant='secondary'
+                    className='d-flex justify-content-center'
+                  >
+                    Site
+                  </Button>
+                </Link>
+                <Link
+                  href='https://github.com/thomasdylan/Clicky-Game'
+                  style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Code
-                </Button>
-              </div>
-            </Card>
-          </Col>
-          <Col className='d-flex justify-content-center'>
-            <Card
-              className='bg-dark text-light'
-              style={{ width: cardSize, height: cardSize + '50px' }}
-            >
-              <Card.Img
-                variant='top'
-                src='https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-              />
-              <Card.Title className='d-flex justify-content-center'>
-                Placeholder
-              </Card.Title>
-              <Card.Body>lorem ipsum</Card.Body>
-              <div className='d-flex justify-content-around'>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
-                >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Site
-                </Button>
-                <Button
-                  variant='secondary'
-                  className='d-flex justify-content-center'
-                >
-                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                  Code
-                </Button>
+                  <Button
+                    variant='secondary'
+                    className='d-flex justify-content-center'
+                  >
+                    Code
+                  </Button>
+                </Link>
               </div>
             </Card>
           </Col>
