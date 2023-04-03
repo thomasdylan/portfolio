@@ -1,7 +1,7 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Link from 'next/link';
-import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
 //import GitHubIcon from '@mui/icons-material/Github';  Vercel is unable to build project with this icon
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -9,13 +9,15 @@ import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import Image from 'next/image';
 
+import ProjectCarousel from './ProjectCarousel';
+
 const LinkContainer = () => {
   const isSmallScreen = useMediaQuery('(max-width:600px)');
   const cardSize = isSmallScreen ? '100%' : '300px';
 
   return (
     <>
-      <Container fluid className='bg-secondary' style={{ height: '100vh' }}>
+      <Container fluid className='bg-secondary' style={{ height: '125vh' }}>
         <Row
           className={`${
             isSmallScreen ? 'pt-2' : 'pt-4'
@@ -48,11 +50,15 @@ const LinkContainer = () => {
               className='bg-dark text-light'
               style={{ width: cardSize, height: cardSize }}
             >
-              <Card.Body>
+              <Card.Body className='d-flex flex-column align-items-center p-1 pt-4'>
                 <Card.Title className='d-flex justify-content-center'>
                   Projects
                 </Card.Title>
-                <Card.Body className='d-flex p-1'>
+                <Card.Body className='d-flex flex-column align-items-center p-1 pt-4 justify-content-center'>
+                  <div className='mb-3'>
+                    <ProjectCarousel />
+                  </div>
+
                   <Button variant='outline-light'>
                     <Link
                       href='/projects'

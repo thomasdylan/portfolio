@@ -3,6 +3,7 @@ import AvatarDesc from '../components/AvatarDesc';
 import { Col, Container, Row, Card, Button } from 'react-bootstrap';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Link from 'next/link';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const projects = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -12,11 +13,16 @@ const projects = () => {
   return (
     <>
       <AvatarDesc />
-      <Container fluid>
+      <Container fluid className='bg-secondary' style={{ height: '125vh' }}>
+        <Row className='align-items-left pt-1 bg-secondary'>
+          <Link href='/' style={{ textDecoration: 'none', color: 'white' }}>
+            <ArrowBackIcon /> Back{' '}
+          </Link>
+        </Row>
         <Row
           className={`${
             isSmallScreen ? 'pt-2' : 'pt-4'
-          } justify-content-center`}
+          } justify-content-center bg-secondary`}
         >
           <Col className='d-flex justify-content-center'>
             <Card
@@ -34,13 +40,15 @@ const projects = () => {
               <Card.Body className='d-flex justify-content-center'>
                 100 python projects in 100 days.
               </Card.Body>
-              <Button
-                variant='secondary'
-                className='d-flex justify-content-center'
-              >
-                <Link href='https://github.com/thomasdylan/100DaysOfPython' />
-                Code
-              </Button>
+              <div className='d-flex justify-content-center mt-3'>
+                <Button
+                  variant='secondary'
+                  className='d-flex justify-content-center'
+                >
+                  <Link href='https://github.com/thomasdylan/100DaysOfPython' />
+                  Code
+                </Button>
+              </div>
             </Card>
           </Col>
           <Col className='d-flex justify-content-center'>
@@ -56,7 +64,7 @@ const projects = () => {
                 Placeholder
               </Card.Title>
               <Card.Body>lorem ipsum</Card.Body>
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-around'>
                 <Button
                   variant='secondary'
                   className='d-flex justify-content-center'
@@ -87,7 +95,7 @@ const projects = () => {
                 Placeholder
               </Card.Title>
               <Card.Body>lorem ipsum</Card.Body>
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-around'>
                 <Button
                   variant='secondary'
                   className='d-flex justify-content-center'
@@ -118,7 +126,7 @@ const projects = () => {
                 Placeholder
               </Card.Title>
               <Card.Body>lorem ipsum</Card.Body>
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-around'>
                 <Button
                   variant='secondary'
                   className='d-flex justify-content-center'
