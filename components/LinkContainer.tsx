@@ -17,7 +17,7 @@ const LinkContainer = () => {
 
   return (
     <>
-      <Container fluid className='bg-secondary' style={{ height: '125vh' }}>
+      <Container fluid className='bg-secondary' style={{ height: '151vh' }}>
         <Row
           className={`${
             isSmallScreen ? 'pt-2' : 'pt-4'

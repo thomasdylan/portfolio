@@ -10,7 +10,7 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} fade>
       <Carousel.Item>
         <Image
           className='d-block w-100'
