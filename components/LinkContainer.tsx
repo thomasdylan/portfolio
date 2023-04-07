@@ -36,7 +36,7 @@ const LinkContainer = () => {
                   Skills
                 </Card.Title>
                 <Card.Text className='d-flex p-1 pt-3'>
-                  Javascript, Typescript, React, Python, SQL, Node, Next.js,
+                  Javascript, Typescript, React, Python, PHP, SQL, Node, Next.js,
                   FireBase, Postgres, HTML, CSS and more.
                 </Card.Text>
               </Card.Body>
